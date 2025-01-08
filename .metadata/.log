@@ -156,3 +156,48 @@ Caused by: java.io.IOException: CreateProcess error=2, The system cannot find th
 	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159)
 	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
 	... 8 more
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-08 20:20:30.126
+!MESSAGE Classpath changed for project: First
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-08 20:20:32.439
+!MESSAGE Classpath changed for project: First
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-08 20:20:32.440
+!MESSAGE Boot project ADDED: First
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-08 20:20:32.441
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-08 20:20:32.563
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-01-08 20:20:32.744
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Program Files\Java\jdk-23\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/Users/Itvedant CR4-20/batch203/SpringBootLearning/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1736347832743
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\Users\Itvedant CR4-20\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.59.0.202411281450\servers\spring-boot-language-server\spring-boot-language-server-1.59.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-08 20:20:32.745
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-01-08 20:20:32.761
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 11164
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-08 20:20:32.964
+!MESSAGE Classpath changed for project: First
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-08 20:20:33.753
+!MESSAGE Classpath changed for project: First
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-08 20:20:48.300
+!MESSAGE Classpath changed for project: First
