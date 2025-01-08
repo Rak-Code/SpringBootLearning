@@ -1,0 +1,158 @@
+!SESSION 2025-01-08 20:04:22.357 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=23.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Users\Itvedant CR4-20\batch203\SpringBootLearning
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-08 20:04:26.093
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-08 20:04:28.018
+!MESSAGE Logback config file: C:\Users\Itvedant CR4-20\batch203\SpringBootLearning\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-08 20:04:39.925
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Itvedant CR4-20'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.workbench 4 0 2025-01-08 20:04:39.939
+!MESSAGE Failed to obtain 'WinDefend' service state
+!STACK 0
+java.io.IOException: Cannot run program "powershell.exe": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.eclipse.ui.internal.WindowsDefenderConfigurator.runProcess(WindowsDefenderConfigurator.java:383)
+	at org.eclipse.ui.internal.WindowsDefenderConfigurator.runPowershell(WindowsDefenderConfigurator.java:378)
+	at org.eclipse.ui.internal.WindowsDefenderConfigurator.isWindowsDefenderServiceRunning(WindowsDefenderConfigurator.java:302)
+	at org.eclipse.ui.internal.WindowsDefenderConfigurator.runExclusionCheck(WindowsDefenderConfigurator.java:159)
+	at org.eclipse.ui.internal.WindowsDefenderConfigurator.lambda$0(WindowsDefenderConfigurator.java:106)
+	at org.eclipse.core.runtime.jobs.Job$2.run(Job.java:187)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:500)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	... 8 more
+
+!ENTRY org.eclipse.epp.mpc.ui 1 2 2025-01-08 20:07:12.581
+!MESSAGE Skipping update check for repository 'https://download.eclipse.org/eclemma/releases/' - failed to read repository. Affected entries: 
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at https://download.eclipse.org/eclemma/releases/compositeContent.xml.
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:453)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:266)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.getLocalFile(CompositeMetadataRepositoryFactory.java:77)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:100)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:799)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:520)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$12(MarketplaceCatalog.java:342)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: org.eclipse.core.runtime.CoreException: 
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.wrap(RepositoryStatusHelper.java:179)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:540)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:465)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:386)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:136)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:202)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:424)
+	... 19 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2025-01-08 20:07:12.582
+!MESSAGE Unable to read repository at https://download.eclipse.org/eclemma/releases/compositeContent.xml.
+!STACK 1
+org.eclipse.core.runtime.CoreException: 
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.wrap(RepositoryStatusHelper.java:179)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.checkException(FileReader.java:540)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:465)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:386)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:136)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:202)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:424)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:266)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.getLocalFile(CompositeMetadataRepositoryFactory.java:77)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:100)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:799)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:448)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:231)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:520)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$12(MarketplaceCatalog.java:342)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+!SUBENTRY 2 unknown 8 1 2025-01-08 20:07:12.582
+!MESSAGE 
+!SUBENTRY 1 org.eclipse.epp.mpc.ui 1 0 2025-01-08 20:07:12.582
+!MESSAGE EclEmma Java Code Coverage 3.1.9
+!SESSION 2025-01-08 20:14:19.227 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=23.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Users\Itvedant CR4-20\batch203\SpringBootLearning
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-08 20:14:27.024
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-08 20:14:31.352
+!MESSAGE Logback config file: C:\Users\Itvedant CR4-20\batch203\SpringBootLearning\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-01-08 20:14:32.257
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-01-08 20:14:32.257
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-01-08 20:14:32.691
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-01-08 20:14:32.691
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-08 20:14:38.860
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Itvedant CR4-20'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.workbench 4 0 2025-01-08 20:14:38.874
+!MESSAGE Failed to obtain 'WinDefend' service state
+!STACK 0
+java.io.IOException: Cannot run program "powershell.exe": CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at org.eclipse.ui.internal.WindowsDefenderConfigurator.runProcess(WindowsDefenderConfigurator.java:383)
+	at org.eclipse.ui.internal.WindowsDefenderConfigurator.runPowershell(WindowsDefenderConfigurator.java:378)
+	at org.eclipse.ui.internal.WindowsDefenderConfigurator.isWindowsDefenderServiceRunning(WindowsDefenderConfigurator.java:302)
+	at org.eclipse.ui.internal.WindowsDefenderConfigurator.runExclusionCheck(WindowsDefenderConfigurator.java:159)
+	at org.eclipse.ui.internal.WindowsDefenderConfigurator.lambda$0(WindowsDefenderConfigurator.java:106)
+	at org.eclipse.core.runtime.jobs.Job$2.run(Job.java:187)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:500)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	... 8 more
