@@ -17,6 +17,11 @@ public class FirstApplication {
 		User u2 = context.getBean(User.class);
 		System.out.println(u2.greet());
 		
+		Post p1 = context.getBean(Post.class);
+//		p1.setUser(u2);
+//		System.out.println(p1.getUser().greet());
+		System.out.println(p1.getUser().greet());
+		
 	}
 
 }
